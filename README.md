@@ -1,8 +1,12 @@
 # Site Web pour présenter mes projets
 
-Réalisé avec Django Python.
+Ce site Web me permet de présenter mes projets faits à la maison.
 
-Voir https://www.w3schools.com/django/index.php.
+Il a été réalisé avec Django Python. Un bon tutoriel est sur https://www.w3schools.com/django/index.php.
+
+Le site est hénérgé par Hostinger.
+
+Tutoriel Django sur Hostinger https://www.hostinger.com/tutorials/django-tutorial.
 
 ## Création du venv
 
@@ -40,4 +44,15 @@ python manage.py runserver
 ```
 python lanage.py startapp projects
 ```
+
+## Créer le fichier requirements.txt
+
+Nécessaire pour le déploiement Hostinger.
+
+```
+pip freeze > requirements.txt
+```
+
+
+
 
