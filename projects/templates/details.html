@@ -1,0 +1,13 @@
+{% extends "master.html" %}
+
+{% block title %}
+    Description de {{ myproject.name }}
+{% endblock %}
+
+{% block content %}
+<h1>{{ myproject.name }}</h1>
+  
+<p>{{ myproject.desc }}</p>
+
+<p>Back to <a href="/projects">Projects</a></p>
+{% endblock %}

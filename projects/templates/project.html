@@ -1,0 +1,45 @@
+{% extends "master.html" %}
+
+{% block title %}
+    {{ myproject.name }}
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid mt-4 w-100">
+	<div class="row">
+		<figure>
+			<blockquote class="blockquote">
+				<p>{{ myproject.desc }}</p>
+			</blockquote>
+			<figcaption class="blockquote-footer">
+				Someone famous in <cite title="Source Title">Source Title</cite>
+			</figcaption>
+		</figure>
+	</div>
+	<div class="row">
+    <div class="col">
+      {% block text %}
+      {% endblock %}
+    </div>
+    <div class="col">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          {% block carrousel-inner %}
+          {% endblock %}
+				</div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
